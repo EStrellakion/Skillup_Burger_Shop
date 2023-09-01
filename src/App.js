@@ -29,6 +29,10 @@ import "./styles/profile.scss";
 import "./styles/table.scss";
 import "./styles/orderDetails.scss";
 import "./styles/about.scss";
+import Cart from "./components/cart/Cart";
+import Shipping from "./components/cart/Shipping";
+import MyOrders from "./components/myOrders/MyOrders";
+
 
 function App() {
   return (
@@ -38,13 +42,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-          //           Add the Route for CART
-      
-          //           Add the Route for SHIPPING
-        
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/myorders" element={<MyOrders />} />
+          
+          
+        <Route path="/shipping" element={<Shipping />} />
         <Route path="/login" element={<Login />} />
         <Route path="/me" element={<Profile />} />
-         //           Add the Route for MY ORDERS
+        
 
         <Route path="/order/:id" element={<OrderDetails />} />
       
